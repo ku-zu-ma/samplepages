@@ -102,3 +102,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* preタグのセンタリング */
+pre {
+    display: block;
+    width: fit-content;   /* 中身の幅に合わせる */
+    margin: 0 auto;       /* ← 中央寄せの決め手 */
+    text-align: left;     /* pre の中のテキストは左寄せのまま */
+}

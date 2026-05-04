@@ -17,7 +17,7 @@ body::before {
     width: 100%;
     height: 100%;
 
-    background-image: url("C:/Users/jinom/Downloads/image/background.jpg");
+    background-image: url("./image/background.jpg");
     background-size: 20%;
     background-repeat: repeat;
     background-position: top left;

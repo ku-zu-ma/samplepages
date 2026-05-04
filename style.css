@@ -43,6 +43,20 @@ header {
 }
 
 .map-container img {
+    width: 50%;
+    max-width: none;
+    display: block; /* ← inline の隙間を消す */
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* 実績画像の中央配置 */
+.achievement-container {
+    padding: 0;
+    display: block; /* ← flex をやめると余白が消える */
+}
+
+.achievement-container img {
     width: 100%;
     max-width: none;
     display: block; /* ← inline の隙間を消す */

@@ -30,7 +30,7 @@ body::before {
 header {
     background: rgba(30, 235, 85, 0.85);
     color: white;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     font-size: 60px;
     font-weight: bold;

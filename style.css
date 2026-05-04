@@ -11,7 +11,7 @@ body {
 /* 背景画像だけを薄くする */
 body::before {
     content: "";
-    position: fixed;
+    position: absolute; /* ← fixed から absolute に変更 */
     top: 0;
     left: 0;
     width: 100%;
@@ -30,25 +30,24 @@ body::before {
 header {
     background: rgba(30, 235, 85, 0.85);
     color: white;
-    padding: 20px;
+    padding: 60px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
 }
 
 /* 地図画像の中央配置 */
 .map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+    padding: 0;
+    display: block; /* ← flex をやめると余白が消える */
 }
 
 .map-container img {
-    width: 90%;
-    max-width: 1600px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: none;
+    display: block; /* ← inline の隙間を消す */
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* 下部リンクリスト */

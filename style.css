@@ -52,6 +52,7 @@ header {
 
 /* 実績画像の中央配置 */
 .achievement-container {
+    align-items: center;
     padding: 0;
     display: block; /* ← flex をやめると余白が消える */
 }

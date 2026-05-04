@@ -1,0 +1,77 @@
+/* 全体設定：背景に透かし画像 */
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 背景画像だけを薄くする */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("C:/Users/jinom/Downloads/image/background.jpg");
+    background-size: 20%;
+    background-repeat: repeat;
+    background-position: top left;
+
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* タイトル */
+header {
+    background: rgba(74, 144, 226, 0.85);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* 地図画像の中央配置 */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.map-container img {
+    width: 90%;
+    max-width: 1600px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* 下部リンクリスト */
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007aff;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
